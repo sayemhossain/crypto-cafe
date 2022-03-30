@@ -19,10 +19,12 @@ const Coins = () => {
           </h1>
           <p className="text-gray-500">Total coins: {coins.length}</p>
         </div>
-        <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center">
-          {coins.map((coin) => (
-            <AllCoin key={coin.id} coin={coin}></AllCoin>
-          ))}
+        <div className="flex justify-center">
+          <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center">
+            {coins.map((coin) => (
+              <AllCoin key={coin.id} coin={coin}></AllCoin>
+            ))}
+          </div>
         </div>
       </div>
     </div>
