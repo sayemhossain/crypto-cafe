@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -6,9 +7,9 @@ const HomePage = () => {
       <h1 className="font-mono text-xl md:text-5xl mb-5">
         Welcome to CRYPTO CAFE
       </h1>
-      <button className="bg-blue-600  py-2 px-3 rounded-full text-white">
+      <Link to="/" className="bg-blue-600  py-2 px-3 rounded-full text-white">
         Explore Coins
-      </button>
+      </Link>
     </div>
   );
 };
