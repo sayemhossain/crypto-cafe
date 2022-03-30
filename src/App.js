@@ -6,6 +6,7 @@ import Coins from "./components/Coins/Coins";
 import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
+import NotFound from "./components/NotFound/NotFound";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/coins" element={<Coins></Coins>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/about" element={<About></About>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       {/* <Footer></Footer> */}
     </div>

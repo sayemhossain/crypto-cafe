@@ -14,7 +14,7 @@ const AllCoin = ({ coin }) => {
           />
         </div>
         <div className="flex flex-col justify-end">
-          <h4 className="text-gray-600">{name}</h4>
+          <h4 className="text-gray-600 font-medium">{name}</h4>
           <h6 className="text-gray-400">{symbol}</h6>
         </div>
       </div>
