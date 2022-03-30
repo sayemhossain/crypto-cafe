@@ -5,7 +5,7 @@ const Coins = () => {
   const [coins, setCoins] = useState([]);
   useEffect(() => {
     fetch(
-      "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false"
+      "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
     )
       .then((res) => res.json())
       .then((data) => setCoins(data));
@@ -19,7 +19,7 @@ const Coins = () => {
           </h1>
           <p className="text-gray-500">Total coins: {coins.length}</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center">
+        <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center">
           {coins.map((coin) => (
             <AllCoin key={coin.id} coin={coin}></AllCoin>
           ))}
